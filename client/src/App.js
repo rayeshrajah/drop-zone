@@ -1,4 +1,5 @@
 import './App.css';
+import DropZoneTimer from './components/dropZoneTimer';
 
 const App = () => {
 	return (
@@ -14,8 +15,9 @@ const App = () => {
 			<div className="dropZone__title-timer-container">
 				<div className="dropZone__title-text">LEEZY BOOST 103</div>
 				<div className="dropZone__timer-container">
-					
+					<DropZoneTimer />
 				</div>
+				<div className="dropZone__until-drop-text">Until drop</div>
 			</div>
 		</div>
 	);

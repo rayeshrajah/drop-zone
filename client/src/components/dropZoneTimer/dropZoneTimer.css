@@ -1,0 +1,42 @@
+.dropZoneTimer__container {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+}
+
+.dropZoneTime__time-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.dropZoneTime__time-container {
+    display: flex;
+    gap: 12px;
+}
+
+.dropZoneTime__time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 58px;
+    height: 73px;
+    font-size: 48px;
+    font-family: 'Rozha One';
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.dropZoneTime__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: black;
+}
