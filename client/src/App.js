@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+	return (
+		<div className="App">
+			<div className="dropZone__header-text-container">
+				<div className="dropZone__drop-text"> 
+					DROP
+				</div>
+				<div className="dropZone__zone-text"> 
+					ZONE
+				</div>
+			</div>
+			<div className="dropZone__title-timer-container">
+				<div className="dropZone__title-text">LEEZY BOOST 103</div>
+				<div className="dropZone__timer-container">
+					
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default App;
