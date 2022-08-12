@@ -43,30 +43,29 @@ const DropZoneTimer = () => {
                     <div className="dropZoneTime__time">{dropZoneTimer.days.toString().split("")[0]}</div>
                     <div className="dropZoneTime__time">{dropZoneTimer.days.toString().split("")[1]}</div>
                 </div>
-                <div className="dropZoneTime__text">DAYS</div>
+                <div className="dropZoneTime__text">Days</div>
             </div>
             <div className="dropZoneTime__time-text-container">
                 <div className="dropZoneTime__time-container">
                     <div className="dropZoneTime__time">{dropZoneTimer.hours.toString().split("")[0]}</div>
                     <div className="dropZoneTime__time">{dropZoneTimer.hours.toString().split("")[1]}</div>
                 </div>
-                <div className="dropZoneTime__text">HOURS</div>
+                <div className="dropZoneTime__text">Hours</div>
             </div>
             <div className="dropZoneTime__time-text-container">
                 <div className="dropZoneTime__time-container">
                     <div className="dropZoneTime__time">{dropZoneTimer.minutes.toString().split("")[0]}</div>
                     <div className="dropZoneTime__time">{dropZoneTimer.minutes.toString().split("")[1]}</div>
                 </div>
-                <div className="dropZoneTime__text">MINS</div>
+                <div className="dropZoneTime__text">Mins</div>
             </div>
             <div className="dropZoneTime__time-text-container">
                 <div className="dropZoneTime__time-container">
                     <div className="dropZoneTime__time">{dropZoneTimer.seconds.toString().split("")[0]}</div>
                     <div className="dropZoneTime__time">{dropZoneTimer.seconds.toString().split("")[1]}</div>
                 </div>
-                <div className="dropZoneTime__text">SECS</div>
+                <div className="dropZoneTime__text">Secs</div>
             </div>
-            {/* {dropZoneTimer?.days + ':' + dropZoneTimer?.hours + ':' + dropZoneTimer?.minutes + ':' + dropZoneTimer?.seconds} */}
         </div>
     )
 }

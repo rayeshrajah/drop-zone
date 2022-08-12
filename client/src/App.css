@@ -11,8 +11,8 @@
 
 .dropZone__header-text-container {
   display: flex;
-  gap: 14px;
   flex-direction: column;
+  gap: 14px;
 }
 
 .dropZone__drop-text,
@@ -25,6 +25,8 @@
   font-weight: 400;
   line-height: 40px;
   font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 
 .dropZone__drop-text {
@@ -52,7 +54,8 @@
   font-weight: 900;
   line-height: 40px;
   font-size: 48px;
-  letter-spacing: 15px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 .dropZone__until-drop-text {
@@ -64,4 +67,42 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .dropZone__title-timer-container {
+    margin-right: 96px;
+  }
+
+  .dropZone__title-text {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .dropZone__title-timer-container {
+    margin-right: 60px;
+  }
+
+  .dropZone__title-text {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .dropZone__title-timer-container {
+    margin-right: 0px;
+    margin-bottom: 82px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .dropZone__title-timer-container {
+    margin-bottom: 32px;
+  }
 }
