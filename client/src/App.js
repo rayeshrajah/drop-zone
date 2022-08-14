@@ -1,6 +1,9 @@
 import './App.css';
 import DropZoneTimer from './components/dropZoneTimer';
 
+//Implemented OPTION B 
+//Can enter any date in DropZoneTimer component as a prop
+
 const App = () => {
 	return (
 		<div className="App">
