@@ -4,33 +4,33 @@
     gap: 24px;
 }
 
-.dropZoneTime__time-text-container {
+.dropZoneTimer__time-text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 16px;
 }
 
-.dropZoneTime__time-container {
+.dropZoneTimer__time-container {
     display: flex;
     gap: 12px;
 }
 
-.dropZoneTime__time {
+.dropZoneTimer__time {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     color: white;
     width: 58px;
-    height: 72px;
+    height: 73px;
     font-size: 48px;
     font-family: 'Rozha One';
     font-weight: 400;
     line-height: 40px;
 }
 
-.dropZoneTime__text {
+.dropZoneTimer__text {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -39,37 +39,4 @@
     text-align: center;
     letter-spacing: 0.15em;
     color: black;
-    text-transform: uppercase;
-}
-
-@media only screen and (max-width: 1200px) {
-    .dropZoneTime__time {
-        width: 42px;
-        height: 56px;
-        font-size: 38px;
-    }
-
-    .dropZoneTime__text {
-        font-size: 18px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .dropZoneTimer__container {
-        gap: 12px;
-    }
-
-    .dropZoneTime__time-container {
-        gap: 6px;
-    }
-
-    .dropZoneTime__time {
-        width: 32px;
-        height: 40px;
-        font-size: 24px;
-    }
-
-    .dropZoneTime__text {
-        font-size: 14px;
-    }
 }

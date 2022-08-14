@@ -19,43 +19,43 @@ const DropZoneTimer = ({date}) => {
         }, 1000);
 
         return () => clearTimeout(getTimeDifference);
-        
+
     }, [dropZoneDays, dropZoneHours, dropZoneMins, dropZoneSecs, date]);
 
     return(
         <div className="dropZoneTimer__container">
-            <div className="dropZoneTime__time-text-container">
-                <div className="dropZoneTime__time-container">
+            <div className="dropZoneTimer__time-text-container">
+                <div className="dropZoneTimer__time-container">
                     {
                         dropZoneDays?.toString().split("").map((el, index) => {
                             return(
-                                <div key={index} className="dropZoneTime__time">{el}</div>
+                                <div key={index} className="dropZoneTimer__time">{el}</div>
                             )
                         })
                     }
                 </div>
-                <div className="dropZoneTime__text">Days</div>
+                <div className="dropZoneTimer__text">Days</div>
             </div>
-            <div className="dropZoneTime__time-text-container">
-                <div className="dropZoneTime__time-container">
-                    <div className="dropZoneTime__time">{dropZoneHours?.toString().split("")[0]}</div>
-                    <div className="dropZoneTime__time">{dropZoneHours?.toString().split("")[1]}</div>
+            <div className="dropZoneTimer__time-text-container">
+                <div className="dropZoneTimer__time-container">
+                    <div className="dropZoneTimer__time">{dropZoneHours?.toString().split("")[0]}</div>
+                    <div className="dropZoneTimer__time">{dropZoneHours?.toString().split("")[1]}</div>
                 </div>
-                <div className="dropZoneTime__text">Hours</div>
+                <div className="dropZoneTimer__text">Hours</div>
             </div>
-            <div className="dropZoneTime__time-text-container">
-                <div className="dropZoneTime__time-container">
-                    <div className="dropZoneTime__time">{dropZoneMins?.toString().split("")[0]}</div>
-                    <div className="dropZoneTime__time">{dropZoneMins?.toString().split("")[1]}</div>
+            <div className="dropZoneTimer__time-text-container">
+                <div className="dropZoneTimer__time-container">
+                    <div className="dropZoneTimer__time">{dropZoneMins?.toString().split("")[0]}</div>
+                    <div className="dropZoneTimer__time">{dropZoneMins?.toString().split("")[1]}</div>
                 </div>
-                <div className="dropZoneTime__text">Mins</div>
+                <div className="dropZoneTimer__text">Mins</div>
             </div>
-            <div className="dropZoneTime__time-text-container">
-                <div className="dropZoneTime__time-container">
-                    <div className="dropZoneTime__time">{dropZoneSecs?.toString().split("")[0]}</div>
-                    <div className="dropZoneTime__time">{dropZoneSecs?.toString().split("")[1]}</div>
+            <div className="dropZoneTimer__time-text-container">
+                <div className="dropZoneTimer__time-container">
+                    <div className="dropZoneTimer__time">{dropZoneSecs?.toString().split("")[0]}</div>
+                    <div className="dropZoneTimer__time">{dropZoneSecs?.toString().split("")[1]}</div>
                 </div>
-                <div className="dropZoneTime__text">Secs</div>
+                <div className="dropZoneTimer__text">Secs</div>
             </div>
         </div>
     )
