@@ -11,7 +11,7 @@ const App = () => {
 			<div className="dropZone__title-timer-container">
 				<div className="dropZone__title-text">Leezy Boost 103</div>
 				<div className="dropZone__timer-container">
-					<DropZoneTimer />
+					<DropZoneTimer date="2022/08/24"/>
 				</div>
 				<div className="dropZone__until-drop-text">Until drop</div>
 			</div>
