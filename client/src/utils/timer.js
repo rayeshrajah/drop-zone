@@ -8,5 +8,11 @@ export const getTimeDifference = (date) => {
         let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
         return {days, hours, minutes, seconds};
+    } else {
+        let days = '00';
+        let hours = '00';
+        let minutes = '00';
+        let seconds = '00';
+        return {days, hours, minutes, seconds};
     }
 };

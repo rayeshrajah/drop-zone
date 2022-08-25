@@ -4,7 +4,7 @@ import "./dropZoneTimer.css";
 
 const DropZoneTimer = ({date}) => {
 
-    const [dropZoneDays, setDropZoneDays] = useState(getTimeDifference(date).days.toString().length > 1 ? getTimeDifference(date).days: `0${getTimeDifference(date).days}`);
+    const [dropZoneDays, setDropZoneDays] = useState(getTimeDifference(date).days.toString().length > 1 ? getTimeDifference(date).days : `0${getTimeDifference(date).days}`);
     const [dropZoneHours, setDropZoneHours] = useState(getTimeDifference(date).hours.toString().length > 1 ? getTimeDifference(date).hours : `0${getTimeDifference(date).hours}`);
     const [dropZoneMins, setDropZoneMins] = useState(getTimeDifference(date).minutes.toString().length > 1 ? getTimeDifference(date).minutes : `0${getTimeDifference(date).minutes}`);
     const [dropZoneSecs, setDropZoneSecs] = useState(getTimeDifference(date).seconds.toString().length > 1 ? getTimeDifference(date).seconds : `0${getTimeDifference(date).seconds}`);
